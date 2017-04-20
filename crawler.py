@@ -47,7 +47,7 @@ for query in queries:
         try:
             req = urllib2.Request(img, headers={'User-Agent': header})
             raw_img = urllib2.urlopen(req).read()
-
+            print 'Downloading', img
             if not os.path.exists(dir):
                 os.mkdir(dir)
             
