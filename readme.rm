@@ -2,4 +2,5 @@ lib: openCV, bs4
 config.py: read this first.
 crawler.py: crawl image from Google Search.
 faceExtractor.py: crop face from raw downloaded data. There are some wrong detections that need checked manually.
+./initDataSet.sh <input dir> <output dir>
 

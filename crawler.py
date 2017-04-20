@@ -28,8 +28,9 @@ print queries
 
 for query in queries:
     image_type = 'img'
+    query = query.replace(' ', '_')
     dir = os.path.join(OUTPUT, query)
-    query = query.replace(' ', '+')
+    query = query.replace('_', '+')
     url =  'https://www.google.co.in/search?q=' + query + '&source=lnms&tbm=isch'
 
     print dir

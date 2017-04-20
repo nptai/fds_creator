@@ -19,6 +19,9 @@ paths.sort()
 
 for ifile in paths:
     img = cv.imread(ifile)
+    if img == None:
+        continue
+        
     gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
